@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Travel Application</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <div id="header" class="box_1">
+        <h1>Travel Around the Globe</h1>
+        <img class="logo" src="../media/travel-logo.jpg" alt="logo">
+        <div class="navigation">
+          <a href="">About</a>
+          <a href="">Travel Planner</a>
+        </div>
+        <div id="social-media">
+            <img src="../media/fb_icon_.png" alt="Facebook"/>
+            <img src="../media/ig-logo.png" alt="Instagram"/>
+            <img src="../media/twitterlogo-1.jpg" alt="Twitter"/>
+            <img src="../media/pinterest-icon.png" alt="Pinterest"/>
+        </div>
+      </div>
+      <section id="about" class="box_2">
+        <div class="plan">
+          <h1>Start planning your trip</h1>
+          <p>Halvah liquorice fruitcake donut muffin cake jelly beans. Marzipan brownie lollipop carrot cake biscuit. Gummi bears icing cake pastry gummi bears sweet. Wafer gummies I love bonbon chupa chups pastry gummi bears I love chocolate bar. Croissant caramels dessert icing. Caramels brownie macaroon tiramisu fruitcake I love. Candy chocolate cake cake wafer candy muffin sweet roll macaroon. Tart I love macaroon chupa chups pastry dessert. Tootsie roll sweet roll sesame snaps halvah chupa chups candy canes dessert. Toffee sweet roll cake bear claw marshmallow I love pudding donut. Candy candy muffin sweet roll ice cream chocolate I love marshmallow. Chocolate sweet powder dragée cake gummi bears pudding soufflé. Toffee sesame snaps cotton candy topping cupcake I love topping.</p>
+          <a href="" id="link">+ plan your trip</a>
+        </div>
+      </section>
+      <section id="travel_planner" class="box_3">
+        <div class="planner_box">
+          <form id="travel_form">
+            <h1 class="form_heading">Plan your trip</h1>
+            <input type="text" id="city_from" class="form_input" name="from" value="Zürich, CH" required placeholder="Departing from...">
+            <input type="text" id="city_to" class="form_input" name="to" value="Budapest, HU" required placeholder="Going to...">
+            <label class="date" for="date">Departing on:</label>
+            <input type="date" id="dep_date" value="2020-05-28" class="form_input" name="date" required>
+            <input type="submit" class="submit" name="submit" value="Submit">
+          </form>
+        </div>
+      </section>
+      <section id="result" class="box_4" style="display: none">
+        <div class="result_box">
+          <img src="../media/globe.jpg" alt="destination" id="pixabay">
+          <h2 class="city_name">My trip from: <span id="from_city"></span></h2>
+          <h2 class="city_name">My trip to: <span id="to_city"></span></h2>
+          <h2 class="departure_date">Departing on: <span id="exact_date">DD/MM/YYYY</span></h2>
+          <a href="" class="buttons" id="remove">Remove trip</a>
+          <a href="" class="buttons" id="print">Print trip</a>
+          <h2 class="number_ofdays">This is <span id="days"> NUM </span> days away.</h2>
+          <h2 class="weather__name text__result">Typical weather for then is: High: <span id="temp_high"> 20</span> °C, Low: <span id="temp_low"> 10</span> °C, <span id="forecast"></span>.</h2>  
+        </div>
+      </section>
+      <footer id="footer" class="box_5" role="contentinfo">
+        <div class="footer-links">
+          <div>
+            <a href="">Contact</a>
+          </div>
+          <div>
+            <a href="">FAQ</a>
+          </div>
+          <div>
+            <a href="" target="_blank">Terms of Use</a>
+          </div>
+          <div>
+            <a href="" target="_blank">Data Protection</a>
+          </div>
+          <div>
+            <a href="" target="_blank">Privacy Policy</a>
+          </div>
+          <div class="copyright">© 2020 Travel Around the Globe, all rights reserved</div>
+        </div>
+    </footer>
+    </div>
+    <!-- <script type="text/javascript" src="../js/app.js"></script> -->
+  </body>
+</html>
