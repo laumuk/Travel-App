@@ -32,11 +32,12 @@
     cursor: pointer;
 }
 
-@media(max-width: 700px) {
+@media only screen and (max-width: 600px) {
     #header {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        // line-height: 10px;
         align-content: stretch;
         font-size: 15px;
     }

@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
 
 body {
-    background: linear-gradient(150deg, rgb(68, 175, 148) 50%, rgb(173, 91, 139) 100%);
+    background: linear-gradient(120deg, rgb(68, 175, 148) 0%, rgb(173, 91, 139) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Baloo Chettan 2', cursive;
+    // height: 100%;
+    // width: 100%;
     margin: 0;
 }
 
@@ -93,16 +98,6 @@ body {
     transform: translateY(0);
 }
 
-@media(max-width: 500px) {
-    .plan h1 {
-        font-size: 30px;
-    }
-
-    .plan p {
-        font-size: 12px;
-    }
-
-}
 #travel_form {
     align-content: center;
     background-image: url("../media/932.jpg");
