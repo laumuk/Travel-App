@@ -30,17 +30,14 @@ app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
 
-//POST route that adds data
-app.post('/add', function(req, res) {
-    projectData = {
-        cityFrom: req.body.cityFrom,
-        cityTo: req.body.cityTo,
-        departureDate: req.body.departureDate,
-        weather: req.body.weather,
-        summary: req.body.summary,
-        daysLeft: req.body.daysLeft
-    };
-    res.send(projectData);
-});
+// //POST route that adds data
+// app.post('/add', function(req, res) {
+//     projectData = {
+//         temperature: req.body.temperature,
+//         date: req.body.date,
+//         userResponse: req.body.userResponse
+//     };
+//     res.send(projectData);
+// });
 
 module.exports = app

@@ -1,8 +1,3 @@
-import { getCity } from './api.js'
-import { getWeather } from './api.js'
-import { getImage } from './api.js'
-import { getWeatherForDate } from './api.js'
-
 //Global Variables
 const addButton = document.getElementById('link');
 const printButton = document.getElementById('print');
