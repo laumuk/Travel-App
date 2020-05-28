@@ -2,6 +2,7 @@ import { getCity } from './api.js'
 import { getWeather } from './api.js'
 import { getImage } from './api.js'
 import { getWeatherForDate } from './api.js'
+import { calcDayDiff } from './api.js'
 
 //Global Variables
 const addButton = document.getElementById('link');
@@ -55,7 +56,7 @@ const submitForm = async () => {
         })
         .then((weatherInfo) => {
             const weatherForDay = getWeatherForDate(weatherInfo.data, travelData.date)
-            const dayDiff = Math.ceil((travelData.date.getTime() - Date.now()) / (1000 * oneDaySeconds))
+            const dayDiff = calcDayDiff(travelData.date, new Date())
             updateUI(travelData.departure, travelData.arrival, weatherForDay, travelData.date, dayDiff)
         })
 }

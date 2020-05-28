@@ -1,3 +1,4 @@
+require('babel-polyfill');
 //API URL + Keys
 const geoNamesURL = 'http://api.geonames.org/searchJSON';
 const geoNamesKey = 'laura_bobrovacz';
@@ -46,7 +47,7 @@ export const getImage = async(city) => {
 
 //Getting date
 export const getWeatherForDate = (weatherData, day) => {
-    const diff = Math.ceil((day.getTime() - Date.now()) / (1000 * oneDaySeconds))
+    const diff = calcDayDiff(day, new Date())
     if (diff < 0) {
         // Poor man's error handling: return today's if date is in the past
         return weatherData[0];
@@ -57,3 +58,7 @@ export const getWeatherForDate = (weatherData, day) => {
         return weatherData[diff];
     }
 } 
+
+export const calcDayDiff = (date1, date2) => {
+    return Math.ceil((date1.getTime() - date2.getTime()) / (1000 * oneDaySeconds))
+}
