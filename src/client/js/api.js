@@ -1,4 +1,4 @@
-require('babel-polyfill');
+const babel_polyfill = require('babel-polyfill');
 //API URL + Keys
 const geoNamesURL = 'http://api.geonames.org/searchJSON';
 const geoNamesKey = 'laura_bobrovacz';

@@ -1,5 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
-projectData = {};
+let projectData = {};
 
 const path = require('path');
 
@@ -40,7 +40,7 @@ app.post('/add', function(req, res) {
         summary: req.body.summary,
         daysLeft: req.body.daysLeft
     };
-    res.send(projectData);
+    res.status(201).send(projectData);
 });
 
 module.exports = app
